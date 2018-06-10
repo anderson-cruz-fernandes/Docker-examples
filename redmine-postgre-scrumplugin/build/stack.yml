@@ -15,9 +15,11 @@ services:
     ports:
       - 8080:3000
     environment:
+      RAILS_ENV: production
       REDMINE_DB_POSTGRES: db
       REDMINE_DB_USERNAME: postgres
       REDMINE_DB_PASSWORD: secret
+    command: bundle exec rake redmine:plugins:migrate
 
   db:
     image: postgres:9.3
