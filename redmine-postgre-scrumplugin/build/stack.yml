@@ -8,6 +8,7 @@ services:
       - "./plugins:/usr/src/redmine/plugins"
       - "./files:/usr/src/redmine/files"
       - "./log:/usr/src/redmine/log"
+      - "./config/configuration.yml:/usr/src/redmine/config/configuration.yml"
     depends_on:
     - db
     restart: always
