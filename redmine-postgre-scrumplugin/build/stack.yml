@@ -5,7 +5,7 @@ services:
   redmine:
     image: redmine
     volumes:
-      - plugins:/usr/src/redmine/plugins
+      - "./plugins:/usr/src/redmine/plugins"
     depends_on:
     - db
     restart: always
