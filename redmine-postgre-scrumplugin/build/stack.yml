@@ -1,0 +1,20 @@
+version: '3.1'
+
+services:
+
+  redmine:
+    image: redmine
+    restart: always
+    ports:
+      - 8080:3000
+    environment:
+      REDMINE_DB_POSTGRES: redmine
+      REDMINE_DB_USERNAME: postgres
+      REDMINE_DB_PASSWORD: secret
+
+  db:
+    image: postgres:9.3
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: secret      
