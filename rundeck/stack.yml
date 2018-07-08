@@ -8,4 +8,5 @@ services:
     ports:
       - 4440:4440
     environment:
+      EXTERNAL_SERVER_URL: http://ip172-18-0-10-bd10c1ds2ti0008c6rn0-4440.direct.labs.play-with-docker.com
       RUNDECK_ADMIN_PASSWORD: admin

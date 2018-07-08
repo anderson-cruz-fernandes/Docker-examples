@@ -1,0 +1,7 @@
+git commit -m 'alteração no rundeck'
+git add -A
+alias ll='ls -lah'
+git push
+git clone https://github.com/anderson-cruz-fernandes/Docker-examples.git
+usuario: anderson-cruz-fernandes
+docker-compose -f stack.yml up
