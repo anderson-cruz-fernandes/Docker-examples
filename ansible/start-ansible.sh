@@ -1,1 +1,1 @@
-docker run -it ansible
+docker run -it --mount source=hosts,target=/etc/ansible/hosts ansible
