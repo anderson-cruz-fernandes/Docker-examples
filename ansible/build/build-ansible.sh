@@ -1,1 +1,1 @@
-docker built -t ansible .
+docker build -t ansible .

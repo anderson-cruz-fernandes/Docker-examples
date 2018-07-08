@@ -1,5 +1,5 @@
 FROM debian:stable
 
-RUN apt-get update && apt-get install ansible && rm -rf /var/lib/apt/lists/*
+RUN apt-get -y update && apt-get -y install ansible && rm -rf /var/lib/apt/lists/*
 
 CMD ["bash"]
